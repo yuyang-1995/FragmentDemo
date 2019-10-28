@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FragmentDemo</string>
+    <string name="title_content">碎片标题</string>
+    <string name="content">碎片内容</string>
+</resources>

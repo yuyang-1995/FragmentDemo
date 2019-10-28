@@ -1,0 +1,1 @@
+include ':app', ':dtfragment', ':fragmentapp', ':fragmentlife', ':valuetransform'

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <EditText
+      android:id="@+id/id_et_content"
+      android:text="请输入内容"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_id_btn_pass"
+        android:background="#c0ff3e"
+        android:text="点击传值"
+        android:textSize="20sp"
+        android:onClick="sendVal"
+        android:layout_below="@+id/id_et_content"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--展示内容的布局-->
+    <LinearLayout
+        android:id="@+id/id_ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+
+    </LinearLayout>
+
+</RelativeLayout>

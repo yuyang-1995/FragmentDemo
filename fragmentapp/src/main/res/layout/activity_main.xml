@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <!--展示内容界面-->
+    <LinearLayout
+        android:id="@+id/id_content_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+
+    <!--展示切换标签-->
+    <LinearLayout
+        android:id="@+id/id_layout_bottom"
+        android:layout_width="match_parent"
+        android:background="#EFE7E5"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <RadioGroup
+            android:id="@+id/id_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/id_rb1"
+                android:gravity="center"
+                android:button="@null"
+                android:text="热销排行"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="50dp"
+
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/id_rb2"
+                android:gravity="center"
+                android:button="@null"
+                android:text="手机专享"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/id_rb3"
+                android:gravity="center"
+                android:button="@null"
+                android:text="未来礼品"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:id="@+id/id_rb4"
+                android:gravity="center"
+                android:button="@null"
+                android:text="我的订单"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</RelativeLayout>
