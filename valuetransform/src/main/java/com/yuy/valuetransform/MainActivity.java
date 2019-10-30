@@ -10,12 +10,19 @@ import android.widget.EditText;
 
 import com.yuy.valuetransform.fragment.ResultFragment;
 
+/**
+ * Coder: yuyang
+ * Date:  2019/10/30 
+ * Description:  Activity 向Fragment 发送数据
+ * Version: 
+ */
 public class MainActivity extends AppCompatActivity {
     private FragmentManager mFragmentManager;
 
     private FragmentTransaction mTransaction;
 
     private EditText mEditText;
+
 
 
     @Override
@@ -28,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         mFragmentManager = getFragmentManager();
 
         mTransaction = mFragmentManager.beginTransaction();
-        mTransaction.add(R.id.id_ll_content, new ResultFragment());
+
+        mTransaction.add(R.id.id_ll_content,  new ResultFragment());
 
         mTransaction.commit();
 
@@ -53,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         resultFragment.setArguments(bundle);
 
         mFragmentManager = getFragmentManager();
+
         mTransaction = mFragmentManager.beginTransaction();
 
         mTransaction.replace(R.id.id_ll_content, resultFragment);

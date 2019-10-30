@@ -1,13 +1,18 @@
 package com.yuy.dtfragment;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 
 import com.yuy.dtfragment.fragment.ContentFragment;
 import com.yuy.dtfragment.fragment.TitleFragment;
+
+import java.lang.ref.WeakReference;
 
 /**
  * 演示fragment的动态演示
@@ -40,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
 
         //4:  提交事务
         transaction.commit();
-
     }
+
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+
 }

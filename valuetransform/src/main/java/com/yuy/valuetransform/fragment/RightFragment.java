@@ -32,7 +32,6 @@ public class RightFragment extends Fragment {
 
 
     //定义函数给TV 赋值
-
     public void setTextView(String textView) {
         mTextView.setText(textView);
     }

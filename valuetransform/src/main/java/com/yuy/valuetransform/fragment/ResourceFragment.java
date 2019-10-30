@@ -19,13 +19,15 @@ import com.yuy.valuetransform.R;
 public class ResourceFragment extends Fragment {
 
       Button button;
+
       private EditText mEditText;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //由于Activity 实现了 MyListener 接口， 因此可直接将其强转
+        //由于Activity 实现了 MyListener 接口， 因此可直接碎片对应的Activity 强转
+        //调用 getActivity 方法获取加载碎片的活动 强转
         mMyListener = (MyListener) getActivity();
 
     }
@@ -46,6 +48,7 @@ public class ResourceFragment extends Fragment {
                 String info = mEditText.getText().toString().trim();
 
                 if (mMyListener != null) {
+                    //回调给 活动
                     mMyListener.sendMsg(info);
                 }
             }
@@ -55,7 +58,6 @@ public class ResourceFragment extends Fragment {
     }
 
     private  MyListener mMyListener;
-
 
 
     //定义接口 接口中定义回传数据的函数

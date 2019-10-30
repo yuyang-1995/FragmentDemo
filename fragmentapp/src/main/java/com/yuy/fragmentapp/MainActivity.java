@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rb2.setOnClickListener(this);
         rb3.setOnClickListener(this);
         rb4.setOnClickListener(this);
+
     }
 
 
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
         mTransaction = mFragmentManager.beginTransaction();
 
         switch (v.getId()) {
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
                 default:break;
         }
+
         //提交事务
         mTransaction.commit();
     }

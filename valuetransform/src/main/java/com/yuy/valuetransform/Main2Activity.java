@@ -8,8 +8,14 @@ import android.widget.TextView;
 
 import com.yuy.valuetransform.fragment.ResourceFragment;
 
+/**
+ * Coder: yuyang
+ * Date:  2019/10/30
+ * Description:  碎片向Activity 传递信息
+ * Version:
+ */
 public class Main2Activity extends AppCompatActivity implements ResourceFragment.MyListener{
-
+       //活动实现对应碎片的接口
     TextView mTextView;
 
     @Override
@@ -18,20 +24,10 @@ public class Main2Activity extends AppCompatActivity implements ResourceFragment
         setContentView(R.layout.activity_main2);
 
         mTextView = findViewById(R.id.id_tv_context);
-    }
 
-    private OwnListener mOwnListener = new OwnListener();
-
-
-    class OwnListener implements ResourceFragment.MyListener {
-        @Override
-        public void sendMsg(String info) {
-            mTextView.setText(info);
-        }
     }
 
     @Override
-
     public void sendMsg(String info) {
 
         if (!TextUtils.isEmpty(info)) {
