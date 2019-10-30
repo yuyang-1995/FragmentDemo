@@ -70,5 +70,4 @@ public class LeftFragment extends Fragment {
         super.onSaveInstanceState(outState);
     }
 
-
 }
